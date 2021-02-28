@@ -1,3 +1,13 @@
-name: SamplePlugin
+name: Head-Drill
 version: 1.0
-main: com.github.sonogram.sampleplugin.SamplePlugin
+main: com.github.sonogram.drillhead.DrillHeadPlugin
+api-version: 1.16
+depend: [WorldEdit, ProtocolLib, Kotlin]
+commands:
+  sh:
+    permission: spinhead.command
+    description: "spinhead command"
+permissions:
+  spinhead.command:
+    description: "spinhead permission"
+    default: op

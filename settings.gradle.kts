@@ -1,2 +1,2 @@
-rootProject.name = "Sample-Plugin"
+rootProject.name = "Head-Drill"
 

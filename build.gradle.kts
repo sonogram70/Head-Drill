@@ -4,18 +4,20 @@ plugins {
 }
 
 group = "com.github.sonogram"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 repositories {
     mavenCentral()
     maven("https://jitpack.io/")
     maven("https://papermc.io/repo/repository/maven-public")
+    maven("https://maven.enginehub.org/repo/")
 }
 
 dependencies {
     compileOnly(kotlin("stdlib"))
     compileOnly("com.destroystokyo.paper:paper-api:1.16.5-R0.1-SNAPSHOT")
     implementation("com.github.monun:tap:3.3.3")
+    compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.2")
 }
 tasks {
     create<Copy>("copyToServer") {
